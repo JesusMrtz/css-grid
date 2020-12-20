@@ -1,0 +1,18 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 100vh;
+    gap: 10px 30px;
+    /*implicit grid */
+    grid-auto-rows: 1fr;
+    /*grid-column: 2 / span 2;*/
+}
+
+div {
+    background-color: rebeccapurple;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

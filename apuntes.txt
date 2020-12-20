@@ -1,0 +1,48 @@
+CONCEPTOS ENSENCIALES DE CSS GRID
+    - Junto con la nueva especificación del módulo CSS GRID viene algunos términos y conceptos que hay que entender para poder comenzar a usarlos 
+
+
+
+* GRID CONTAINER Y GRID ITEM 
+    - El elemento que hacer de rejilla/contenedor y cada unos de sus hijos (items) que se muestra dentro. Esta relación parent/child es llamado flex context.
+
+
+* GRID LINE 
+    - El contenedor GRID está formado por dos tipos de lineas:
+        * Horizontales 
+        * Verticales 
+      Las lineas horizontales corren a través del eje X del contenedor GRID y las verticales corren a través del eje Y.
+
+      Podemos hacer referencia a una GRID line por número o por nombre. 
+
+
+* GRID TRACK 
+    - Es un nombre generico para una GRID ROW o GRID COLUMN. 
+    - Es el espacio vertical u horizontal entre dos GRID LINE concecutivas.
+    - Define la altura de un GRID COLUMN o la anchura de un GRID ROW
+
+
+* GRID CELL 
+    - La intersección de un GRID ROW y un GRID COLUMN es llamada GRID CELL, es decir, el espacio entre 4 GRID LINES. 
+    Es además, la unidad mas pequeña a nuestra disposición para colocar un GRID ITEM
+
+
+* GRID AREA 
+    - Cualquier porción del GRID contenida entre 4 GRID LINES
+    - Puede contener N números de GRID CELL
+
+
+
+** Propiedades para los items
+ 
+    - Justify-items: start | end | center | stretch 
+        - es similar que justify-content de flexbox
+
+    - align-items: start | end | center |stretch
+        - Es similiar al align-items de flexbox
+
+    - justify-self: start | end | center | stretch
+        - Alinea un solo elemento en dirección al eje principal (main-axis)
+
+    - aling-self: start | end | center | stretch
+        - Alinea un solo elemento en dirección al eje secundario (cross-axis)

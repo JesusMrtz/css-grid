@@ -1,0 +1,22 @@
+main {
+    display: grid;
+    height: 100vh;
+    gap: 10px;
+    grid-template-columns: 200px 100px;
+    grid-auto-flow: column;
+    grid-auto-columns: 300px;
+}
+
+div {
+    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+div:first-of-type,
+div:nth-of-type(2) {
+    background-color: purple;
+    color: white;
+}
